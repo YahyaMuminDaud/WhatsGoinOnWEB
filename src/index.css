@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-seattle-600 hover:bg-seattle-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-seattle-600 text-seattle-600 hover:bg-seattle-600 hover:text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-seattle-500 focus:border-transparent;
+  }
+  
+  .tag {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .tag-family {
+    @apply bg-pink-100 text-pink-800;
+  }
+  
+  .tag-outdoors {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .tag-music {
+    @apply bg-purple-100 text-purple-800;
+  }
+  
+  .tag-food {
+    @apply bg-orange-100 text-orange-800;
+  }
+  
+  .tag-art {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .tag-sports {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  .tag-nightlife {
+    @apply bg-indigo-100 text-indigo-800;
+  }
+  
+  .tag-culture {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+}
